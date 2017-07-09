@@ -1,7 +1,11 @@
---local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
+--[[
 
+This mod shows how to load custom prefabs and assets so that they are usable
+by the game.
+
+--]]
 GLOBAL.STRINGS.SOOTY = "sooty"
 GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOOTY = "monkeys favrout teddy bear"
 
@@ -9,7 +13,6 @@ local sooty = AddRecipe("sooty", {Ingredient("beefalowool", 10),Ingredient("revi
 
 STRINGS.NAMES.SOOTY = "sooty"
 STRINGS.RECIPE_DESC.SOOTY = "sooty will keep us safe at night"
-
 
 -- The PrefabFiles list is the list of all the files in your <modname>/scripts/prefabs folder
 -- that you want to load prefabs from
