@@ -35,8 +35,7 @@ local function fn(colour)
     anim:SetBank("sooty")
     anim:SetBuild("sooty")
     anim:PlayAnimation("idle")
-
-    inst.entity:SetPristine()
+    inst.entity:AddNetwork()
 
     if not TheWorld.ismastersim then
         return inst

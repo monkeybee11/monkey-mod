@@ -12,6 +12,6 @@ version = "1.5"
 -- forumthread = "/files/file/202-sample-mods/"
 
 -- This lets other players know if your mod is out of date, update it to match the current version in the game
-api_version = 6
+api_version = 10
 
 dst_compatible = true
