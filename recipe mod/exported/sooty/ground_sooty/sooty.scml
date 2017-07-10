@@ -7,12 +7,12 @@
         <animation id="0" name="idle" length="1000">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="ground_sooty" folder="0" file="0" abs_x="100.974915" abs_y="124.11225" abs_pivot_x="0" abs_pivot_y="1" abs_angle="299.011226" abs_scale_x="0.465162" abs_scale_y="0.534998" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="0" name="ground_sooty" folder="0" file="0" abs_x="80.039686" abs_y="106.376271" abs_pivot_x="0" abs_pivot_y="1" abs_angle="301.209944" abs_scale_x="0.424904" abs_scale_y="0.508184" abs_a="1" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="ground_sooty">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="100.974915" y="124.11225" angle="299.011226" scale_x="0.465162" scale_y="0.534998"/>
+                    <object folder="0" file="0" x="80.039686" y="106.376271" angle="301.209944" scale_x="0.424904" scale_y="0.508184"/>
                 </key>
             </timeline>
         </animation>
