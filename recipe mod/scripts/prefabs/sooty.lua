@@ -20,7 +20,7 @@ local function fn(sim)
     local sound = inst.entity:AddSoundEmitter()
 
     local function OnEquip(inst, owner)
-        owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "swap_sooty")
+        owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "sooty") -- this is kinda a folder parth swap_object = exported folder > swap_prefab > prefab
         owner.AnimState:Show("ARM_carry")
         owner.AnimState:Hide("ARM_normal")
     end   -- this dose a thing im not sure what think it alowes to to go in to the hand slot
