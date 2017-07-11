@@ -1,31 +1,42 @@
-local STRINGS = GLOBAL.STRINGS
-
---[[
-
-This mod shows how to load custom prefabs and assets so that they are usable
-by the game.
-
---]]
-GLOBAL.STRINGS.SOOTY = "sooty"
-GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOOTY = "monkeys favrout teddy bear"
-
--- The PrefabFiles list is the list of all the files in your <modname>/scripts/prefabs folder
--- that you want to load prefabs from
 PrefabFiles = {
-	"sooty",
+    "sooty",
 }
 
-
--- Import things we like into our mod's own global scope, so we don't have 
--- to type "GLOBAL." every time want to use them.
-SpawnPrefab = GLOBAL.SpawnPrefab
-
-local assets=
+	
+   Assets = 
 {
 	
     Asset("ATLAS", "images/inventoryimages/sooty.xml"),
-    Asset("IMAGE", "images/inventoryimages/sooty.tex"),
-	
-}
 
-AddSimPostInit(SimInit )
+}
+ 
+
+        STRINGS = GLOBAL.STRINGS
+        RECIPETABS = GLOBAL.RECIPETABS
+        Recipe = GLOBAL.Recipe
+        Ingredient = GLOBAL.Ingredient
+        TECH = GLOBAL.TECH
+
+
+
+
+
+        -- sooty Info
+        GLOBAL.STRINGS.NAMES.SOOTY = "sooty"
+        STRINGS.RECIPE_DESC.SOOTY = "he will keep us safe at night"
+        GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.SOOTY = "monkeys favrout teddy"
+
+
+
+
+
+
+
+        -- sooty Recipe
+        local sooty = GLOBAL.Recipe("sooty",{ Ingredient("beefalowool", 10), Ingredient("redgem", 2), Ingredient("reviver", 1) },GLOBAL.RECIPETABS.MAGIC, GLOBAL.TECH.NONE, nil, nil, nil, nil, nil, "images/inventoryimages/sooty.xml", "sooty.tex" )
+        sooty.atlas = "images/inventoryimages/sooty.xml"
+
+
+
+
+
