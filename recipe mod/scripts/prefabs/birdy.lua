@@ -68,6 +68,6 @@ local function fn(sim)
 	inst.components.inventoryitem.imagename = "birdy"
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/birdy.xml"
 	
-	return inst
+    return inst
 end
 return Prefab("common/inventory/birdy", fn, assets, prefabs)
