@@ -12,7 +12,7 @@ local function onfinished(inst)
     inst:Remove()
 end
 
-local function topocket(inst, owner)
+local function topocket(inst, owner) -- think this makes it stop spawning birds when u pick it up
 	local attractor = owner.components.birdattractor
         if attractor then
             attractor.spawnmodifier:RemoveModifier(inst)
@@ -24,7 +24,7 @@ local function topocket(inst, owner)
         end
 end
 
-local function toground(inst)
+local function toground(inst) -- think this makes it spawn birds when u drop it on the ground
         local attractor = owner.components.birdattractor
         if attractor then
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_FEATHERHAT, "maxbirds")
