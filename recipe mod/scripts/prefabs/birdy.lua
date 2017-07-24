@@ -1,4 +1,4 @@
-local assets=
+local assets=    --birdy is ment to be a item u drop on the ground and it attracts birds and at some point plays a sound
 {
      Asset("ANIM", "anim/birdy.zip"),
 	 
@@ -8,7 +8,8 @@ local assets=
 prefabs = {
      "birdy",
 }
-local function onfinished(inst)
+-- the topocket and toground was copyed from bernie_inactive.lua  the lines inside the stuff inside the function was copyed from feather hat in the hats.lua everything else was coppyed from sooty.lua
+local function onfinished(inst)  -- think this is what tells the game what to do when picking up and droping birdy
     inst:Remove()
 end
 
