@@ -53,7 +53,7 @@ local function fn(sim)
 	
 	MakeInventoryPhysics(inst)
 	
-	anim:SetBlank("birdy")
+	anim:SetBank("birdy")
 	anim:SetBuild("birdy")
 	anim:PlayAnimation("idle")
 	
