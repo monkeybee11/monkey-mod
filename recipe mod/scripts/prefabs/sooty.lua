@@ -56,7 +56,7 @@ local function fn(sim)
     inst.components.equippable:SetOnEquip(OnEquip)
     inst.components.equippable:SetOnUnequip(OnUnequip)
 
-	inst.components.equippable.dapperness = TUNING.DAPPERNESS_LARGE -- this makes it oso dapper
+	inst.components.equippable.dapperness = TUNING.DAPPERNESS_HUGE -- this makes it oso dapper
  
     return inst
 end   -- this is the end

@@ -1,0 +1,5 @@
+<Build name="birdy.scml">
+ <Symbol name="birdy">
+  <Frame framenum="0" duration="1" image="ground_birdy" w="300" h="330" x="150.000000" y="165.000000"/>
+ </Symbol>
+</Build>
