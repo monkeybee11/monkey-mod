@@ -7,12 +7,12 @@
         <animation id="0" name="idle" length="1000">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="ground_birdy" folder="0" file="0" abs_x="-65.473077" abs_y="110.134615" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="2.053846" abs_scale_y="1.730769" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="0" name="ground_birdy" folder="0" file="0" abs_x="-86.226923" abs_y="94.934615" abs_pivot_x="0" abs_pivot_y="1" abs_angle="5.692654" abs_scale_x="2.546154" abs_scale_y="2.130769" abs_a="1" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="ground_birdy">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="-65.473077" y="110.134615" scale_x="2.053846" scale_y="1.730769"/>
+                    <object folder="0" file="0" x="-86.226923" y="94.934615" angle="5.692654" scale_x="2.546154" scale_y="2.130769"/>
                 </key>
             </timeline>
         </animation>

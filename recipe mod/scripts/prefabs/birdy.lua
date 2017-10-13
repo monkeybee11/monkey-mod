@@ -1,9 +1,9 @@
 local assets=
 {
-     Asset("ANIM", "anim/birdy.zip"),
-	 
-	 Asset("ATLAS", "images/inventoryimages/birdy.xml"),
-	 Asset("IMAGE", "images/inventoryimages/birdy.tex"),
+    Asset("ANIM", "anim/birdy.zip"),
+	
+	Asset("ATLAS", "images/inventoryimages/birdy.xml"),
+	Asset("IMAGE", "images/inventoryimages/birdy.tex"),
 }
 prefabs = {
      "birdy",
@@ -25,6 +25,7 @@ local function topocket(inst, owner)
 end
 
 local function toground(inst, owner)
+    if owner then
         local attractor = owner.components.birdattractor
         if attractor then
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_BIRDY, "maxbirds")
@@ -35,7 +36,8 @@ local function toground(inst, owner)
             if birdspawner ~= nil then
                 birdspawner:ToggleUpdate(true)
             end
-        end
+     	 end
+	end
 end
 
 local function fn(sim)
@@ -52,7 +54,7 @@ local function fn(sim)
     toground(inst)
 	
 	MakeInventoryPhysics(inst)
-	
+	 
 	anim:SetBank("birdy")
 	anim:SetBuild("birdy")
 	anim:PlayAnimation("idle")
