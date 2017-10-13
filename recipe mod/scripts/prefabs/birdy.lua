@@ -25,7 +25,7 @@ local function topocket(inst, owner)
 end
 
 local function toground(inst, owner)
-    if owner then
+    if owner then  -- this is a nil value gaurd thingy to temp fix the mod crashing bc "owner" is a nil value
         local attractor = owner.components.birdattractor
         if attractor then
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_BIRDY, "maxbirds")
