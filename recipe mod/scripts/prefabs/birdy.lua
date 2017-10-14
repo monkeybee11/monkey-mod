@@ -12,21 +12,8 @@ local function onfinished(inst)
     inst:Remove()
 end
 
-local function topocket(inst, owner)
-	local attractor = owner.components.birdattractor
-        if attractor then
-            attractor.spawnmodifier:RemoveModifier(inst)
-
-            local birdspawner = TheWorld.components.birdspawner
-            if birdspawner ~= nil then
-                birdspawner:ToggleUpdate(true)
-            end
-        end
-end
-
-local function toground(inst, owner)
-    if owner then  -- this is a nil value gaurd thingy to temp fix the mod crashing bc "owner" is a nil value
-        local attractor = owner.components.birdattractor
+local function toground(inst)
+        local attractor = inst.components.birdattractor
         if attractor then
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_BIRDY, "maxbirds")
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_DELAYDELTA_BIRDY.MIN, "mindelay")
@@ -37,7 +24,18 @@ local function toground(inst, owner)
                 birdspawner:ToggleUpdate(true)
             end
      	 end
-	end
+end
+
+local function topocket(inst)
+	local attractor = inst.components.birdattractor
+        if attractor then
+            attractor.spawnmodifier:RemoveModifier(inst)
+
+            local birdspawner = TheWorld.components.birdspawner
+            if birdspawner ~= nil then
+                birdspawner:ToggleUpdate(true)
+            end
+        end
 end
 
 local function fn(sim)
@@ -49,6 +47,7 @@ local function fn(sim)
 	inst.entity:AddTransform()
 	inst.entity:AddAnimState()
 	inst.entity:AddNetwork()
+	
 	inst:ListenForEvent("onputininventory", topocket)
     inst:ListenForEvent("ondropped", toground)
     toground(inst)
