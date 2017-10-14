@@ -1,7 +1,7 @@
 local assets=
 {
     Asset("ANIM", "anim/birdy.zip"),
-	
+	Asset("SOUND", "sound/birdy_bank00.fsb"),
 	Asset("ATLAS", "images/inventoryimages/birdy.xml"),
 	Asset("IMAGE", "images/inventoryimages/birdy.tex"),
 }
@@ -13,7 +13,7 @@ local function onfinished(inst)
 end
 
 local function toground(inst)
-        local attractor = inst.components.birdattractor
+    local attractor = TheWorld.components.birdattractor
         if attractor then
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_BIRDY, "maxbirds")
             attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_DELAYDELTA_BIRDY.MIN, "mindelay")
@@ -23,11 +23,11 @@ local function toground(inst)
             if birdspawner ~= nil then
                 birdspawner:ToggleUpdate(true)
             end
-     	 end
+    end
 end
 
 local function topocket(inst)
-	local attractor = inst.components.birdattractor
+	local attractor = TheWorld.components.birdattractor
         if attractor then
             attractor.spawnmodifier:RemoveModifier(inst)
 
@@ -35,7 +35,7 @@ local function topocket(inst)
             if birdspawner ~= nil then
                 birdspawner:ToggleUpdate(true)
             end
-        end
+    end
 end
 
 local function fn(sim)
@@ -62,6 +62,10 @@ local function fn(sim)
 		    return inst
 		   end
 		    inst.entity:SetPristine()
+			inst.sounds =
+			{
+			birdy_tweet = "dontstarve/birdy_bank00/birdy_tweet",
+			}
 			
 	inst:AddComponent("inspectable")
 	
