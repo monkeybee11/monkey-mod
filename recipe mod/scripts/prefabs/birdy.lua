@@ -8,35 +8,31 @@ local assets=
 prefabs = {
      "birdy",
 } 
-local function onfinished(inst) TheNet:Say("1",false)
-    inst:Remove() TheNet:Say("2",false)
-end TheNet:Say("3",false)
+local function onfinished(inst)
+    inst:Remove()
+end
 
-local function toground(inst) TheNet:Say("4",false) --work
-    local attractor = TheWorld.components.birdattractor TheNet:Say("5",false) --work
-        if attractor then TheNet:Say("6",false)
-            attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_MAXDELTA_BIRDY, "maxbirds") TheNet:Say("7",false)
-            attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_DELAYDELTA_BIRDY.MIN, "mindelay") TheNet:Say("8",false)
-            attractor.spawnmodifier:SetModifier(inst, TUNING.BIRD_SPAWN_DELAYDELTA_BIRDY.MAX, "maxdelay") TheNet:Say("9",false)
-            
-            local birdspawner = TheWorld.components.birdspawner TheNet:Say("10",false)
-            if birdspawner ~= nil then TheNet:Say("11",false)
-                birdspawner:ToggleUpdate(true) TheNet:Say("12",false)
-            end TheNet:Say("13",false)
-    end TheNet:Say("14",false) --work
-end TheNet:Say("15",false)
+local function toground(inst) -- this makes birds spawn as offten as wearing a feather hat when on the ground
+	local birdspawner = TheWorld.components.birdspawner
+    if not TheWorld.ismastersim then
+            return inst
+    end
+    if birdspawner ~= nil then
+            birdspawner:SetSpawnTimes({min=2, max=10})
+            birdspawner:SetMaxBirds(7)
+    end
+end
 
-local function topocket(inst) TheNet:Say("16",false) -- work
-	local attractor = TheWorld.components.birdattractor TheNet:Say("17",false) -- work
-        if attractor then TheNet:Say("18",false)
-            attractor.spawnmodifier:RemoveModifier(inst) TheNet:Say("19",false)
-
-            local birdspawner = TheWorld.components.birdspawner TheNet:Say("20",false)
-            if birdspawner ~= nil then TheNet:Say("21",false)
-                birdspawner:ToggleUpdate(true) TheNet:Say("22",false)
-            end TheNet:Say("24",false)
-    end TheNet:Say("25",false)  --work
-end TheNet:Say("26",false)
+local function topocket(inst) -- this makes the spawn rate return to normal when birdy is picked up
+	local birdspawner = TheWorld.components.birdspawner
+    if not TheWorld.ismastersim then
+            return inst
+    end
+    if birdspawner ~= nil then
+            birdspawner:SetSpawnTimes({min=5, max=15})
+            birdspawner:SetMaxBirds(4)
+    end
+end
 
 local function fn(sim)
     local inst = CreateEntity()
@@ -68,6 +64,7 @@ local function fn(sim)
 			}
 			
 	inst:AddComponent("inspectable")
+
 	
 	inst:AddComponent("inventoryitem")
 	inst.components.inventoryitem.imagename = "birdy"
