@@ -1,51 +1,33 @@
-local assets=
+local assets=                              
 {
     Asset("ANIM", "anim/sooty.zip"),
     Asset("ANIM", "anim/swap_sooty.zip"),
  
     Asset("ATLAS", "images/inventoryimages/sooty.xml"),
     Asset("IMAGE", "images/inventoryimages/sooty.tex"),
-}  -- this dose a thing im not sure what
+} TheNet:Say("1") -- this dose a thing im not sure what
 prefabs = {
     "sooty",
 	"torchfire",
-}
+} TheNet:Say("2")
 local function onfinished(inst)
     inst:Remove()
-end   -- this dose a thing im not sure what
+end  TheNet:Say("3") -- this dose a thing im not sure what
 
 local function onopen(inst)
-end
+end TheNet:Say("4")
 
 local function onclose(inst)
-end
+end  TheNet:Say("5")
 
-local function LightBattery(item)
-	return item:HasTag("lightbattery")
-end
-	
-local function CreateGroundGlow(inst, rotrate)
-    local groundglow = SpawnPrefab("hutch_music_light_fx")
-    local scale = (math.random() * .2 + 1.2) * (math.random() < .5 and 1 or -1)
-    groundglow.Transform:SetScale(scale, scale, scale)
-    groundglow.Follower:FollowSymbol(inst.GUID, "base_point", 0, 0, 0)
-    groundglow:InitFX(
-        inst,
-        {
-            rot = math.random(0, 359),
-            rotrate = rotrate,
-            alpha = math.random(),
-            alphadir = math.random() < .5,
-            alpharate = math.random() * .02 + .005,
-        }
-    )
-    return groundglow
-end
+	local function LightBattery(item)
+		return item:HasTag("lightbattery")
+	end  TheNet:Say("6")
 	
 	local function CheckBattery(inst)
 		local lightbattery = --[[ works for all forms ]] FindBattery(inst, LightBattery)
 		
-		if inst._lightbattery ~= lightbattery then
+		if inst._lightbattery ~= lightbattery then TheNet:Say("check battery 1")
 			if lightbattery ~= nil then
 				if inst._lightbattery == nil then
 					for i, fx_prefab in ipairs(inst:GetSkinName() == nil and { "torchfire" } or SKIN_FX_PREFAB[inst:GetSkinName()] or {}) do
@@ -63,7 +45,7 @@ end
 			end
 			inst._lightbattery = lightbattery
 		end
-	end
+	end  TheNet:Say("7")
 
 
 local function fn(sim)
@@ -76,6 +58,7 @@ local function fn(sim)
         owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "sooty") -- this is kinda a folder parth swap_object = exported folder > swap_prefab > prefab
         owner.AnimState:Show("ARM_carry")
         owner.AnimState:Hide("ARM_normal")
+		TheNet:Say("OnEquip work")
     end   -- this dose a thing im not sure what think it alowes to to go in to the hand slot
  
     local function OnUnequip(inst, owner)
@@ -125,5 +108,5 @@ local function fn(sim)
 	inst.components.equippable.dapperness = TUNING.DAPPERNESS_HUGE -- this makes it oso dapper
  
     return inst
-end   -- this is the end
+end TheNet:Say("8")  -- this is the end
 return  Prefab("common/inventory/sooty", fn, assets, prefabs)   -- this dose a thing im not sure what
