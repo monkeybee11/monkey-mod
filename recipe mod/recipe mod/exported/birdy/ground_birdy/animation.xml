@@ -1,0 +1,124 @@
+<Anims>
+ <anim name="idle" root="birdy" numframes="1000" framerate="40">
+  <frame idx="0" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="25" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="50" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="75" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="100" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="125" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="150" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="175" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="200" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="225" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="250" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="275" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="300" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="325" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="350" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="375" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="400" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="425" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="450" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="475" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="500" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="525" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="550" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="575" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="600" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="625" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="650" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="675" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="700" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="725" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="750" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="775" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="800" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="825" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="850" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="875" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="900" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="925" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="950" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+  <frame idx="975" w="94" h="291" x="-51.026817" y="-35.915649">
+   <element name="birdy" layername="ground_birdy" frame="0" z_index="1" m_a="0.220175" m_b="0.363409" m_c="-0.434637" m_d="0.263329" m_tx="73.039688" m_ty="-109.376274"/>
+  </frame>
+ </anim>
+</Anims>
