@@ -46,9 +46,9 @@ local function fn(sim)
         owner.AnimState:Hide("ARM_normal")
 		local lightbattery = --[[ works for all forms ]] FindBattery(inst, LightBattery)
 		
-		if inst._lightbattery ~= lightbattery then TheNet:Say("check battery 1")
+		if inst._lightbattery ~= lightbattery then TheNet:Say("check battery 1") -- its only checking for this on world load up ...y
 			if lightbattery ~= nil then
-				if inst._lightbattery == nil then TheNet:Say("ive got a battery")
+				if inst._lightbattery == nil then TheNet:Say("ive got a battery") -- its only checking for this on world load up ...y
 					inst.Light:Enable(true)
 					end
 				end
@@ -62,6 +62,7 @@ local function fn(sim)
     local function OnUnequip(inst, owner)
         owner.AnimState:Hide("ARM_carry")
         owner.AnimState:Show("ARM_normal")
+		inst.Light:Enable(false)
     end   -- this dose a thing im not sure what think it alowes it to leave the hand slot
 	
     inst.entity:AddTransform()    -- this dose a thing im not sure what
