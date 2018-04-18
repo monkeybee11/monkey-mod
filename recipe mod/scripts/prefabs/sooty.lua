@@ -30,29 +30,26 @@ end
 
 local function lightbattery(inst)
 end
-
 local function OnEquip(inst, owner)
-    owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "sooty") -- this is kinda a folder parth swap_object = exported folder > swap_prefab > prefab
-    owner.AnimState:Show("ARM_carry")
-    owner.AnimState:Hide("ARM_normal")
-	if inst._lightbattery ~= lightbattery then TheNet:Say("check battery 1") -- its only checking for this on world load up ...y
-	if lightbattery ~= nil then
-		if inst._lightbattery == nil then TheNet:Say("ive got a battery") -- its only checking for this on world load up ...y
+	local lightbattery = --[[ works for all forms ]] FindBattery(inst, LightBattery)
+	if true then TheNet:Say("check battery 1") -- its only checking for this on world load up ...y
+		if inst._lightbattery == lightbattery then TheNet:Say("ive got a battery") -- its only checking for this on world load up ...y
 			inst.Light:Enable(true)
 			end
-		end
-	elseif inst._lightbattery ~= nil then
+		elseif inst._lightbattery ~= nil then
 		inst.Light:Enable(false)
-end
+	end
 	inst._lightbattery = lightbattery
-	TheNet:Say("OnEquip work")
+owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "sooty") -- this is kinda a folder parth swap_object = exported folder > swap_prefab > prefab
+owner.AnimState:Show("ARM_carry")
+owner.AnimState:Hide("ARM_normal")
+TheNet:Say("OnEquip work")
 end   -- this dose a thing im not sure what think it alowes to to go in to the hand slot
  
 local function OnUnequip(inst, owner)
     owner.AnimState:Hide("ARM_carry")
     owner.AnimState:Show("ARM_normal")
 end   -- this dose a thing im not sure what think it alowes it to leave the hand slot
-
 
 local function fn(sim)
     local inst = CreateEntity()
@@ -97,7 +94,6 @@ local function fn(sim)
     inst.components.container.onclosefn = onclose
 
 	inst.components.equippable.dapperness = TUNING.DAPPERNESS_HUGE -- this makes it oso dapper
- 
-    return inst
+     return inst
 end TheNet:Say("8")  -- this is the end
 return  Prefab("common/inventory/sooty", fn, assets, prefabs)   -- this dose a thing im not sure what
