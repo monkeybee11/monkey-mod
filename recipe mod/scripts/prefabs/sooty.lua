@@ -9,7 +9,7 @@ local assets=
 prefabs = {
     "sooty",
 	"torchfire",
-} TheNet:Say("2")
+} TheNet:Say("2") -- TheNet:Say("") is for debuging to find out if that line of lua is working
 local function onfinished(inst)
     inst:Remove()
 end  TheNet:Say("3") -- this dose a thing im not sure what
@@ -32,8 +32,8 @@ local function lightbattery(inst)
 end
 local function OnEquip(inst, owner)
 	local lightbattery = --[[ works for all forms ]] FindBattery(inst, LightBattery)
-	if true then TheNet:Say("check battery 1") -- its only checking for this on world load up ...y
-		if inst._lightbattery == lightbattery then TheNet:Say("ive got a battery") -- its only checking for this on world load up ...y
+	if true then-- TheNet:Say("check battery 1") -- its only checking for this on world load up ...y
+		if inst._lightbattery == lightbattery then-- TheNet:Say("ive got a battery") -- its only checking for this on world load up ...y
 			inst.Light:Enable(true)
 			end
 		elseif inst._lightbattery ~= nil then
@@ -43,7 +43,7 @@ local function OnEquip(inst, owner)
 owner.AnimState:OverrideSymbol("swap_object", "swap_sooty", "sooty") -- this is kinda a folder parth swap_object = exported folder > swap_prefab > prefab
 owner.AnimState:Show("ARM_carry")
 owner.AnimState:Hide("ARM_normal")
-TheNet:Say("OnEquip work")
+--TheNet:Say("OnEquip work")
 end   -- this dose a thing im not sure what think it alowes to to go in to the hand slot
  
 local function OnUnequip(inst, owner)
@@ -61,11 +61,12 @@ local function fn(sim)
 	inst.Light:SetIntensity(.8)
 	inst.Light:SetFalloff(.4)
     inst.Light:SetColour(180 / 255, 195 / 255, 150 / 255)
-	inst.Light:Enable(true)
+	inst.Light:Enable(false)
 
     inst.entity:AddTransform()    -- this dose a thing im not sure what
     inst.entity:AddAnimState()  -- this dose a thing im not sure what
     inst.entity:AddNetwork()  -- this dose a thing im not sure what
+
     
     MakeInventoryPhysics(inst)   -- this dose a thing im not sure what
      

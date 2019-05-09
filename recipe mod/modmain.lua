@@ -1,8 +1,23 @@
+local Ingredientes = GLOBAL.Ingredient
+local whereITgo = GLOBAL.RECIPETABS
+local Tech = GLOBAL.TECH
+local STRINGS = GLOBAL.STRINGS
 PrefabFiles = {
     "sooty",
     "birdy",
+	"silk",
+	"spidergland",
 }
 
+
+GLOBAL.STRINGS.NAMES.SILK = "Silk"
+GLOBAL.STRINGS.NAMES.SPIDERGLAND = "Spidergland"
+
+STRINGS.RECIPE_DESC.SILK = "dont ask"
+STRINGS.RECIPE_DESC.SPIDERGLAND = "dang it keli stop making it hard for me"
+
+AddRecipe("silk", { Ingredientes("cutgrass", 6) }, whereITgo.REFINE, Tech.SCIENCE_ONE,nil,nil,nil,2)
+AddRecipe("spidergland", {Ingredientes("heatrock", 1), Ingredientes("nitre", 3) }, whereITgo.REFINE, Tech.SCIENCE_ONE)
 	
    Assets = 
 {
